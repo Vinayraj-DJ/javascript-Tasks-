@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Id Card Using DOM</title>
+  </head>
+  <body>
+    <div id="card">
+      <h2 id="e_i_c"></h2>
+      <img id="img1" />
+      <h1 id="name"></h1>
+      <p id="id_no"></p>
+
+      <h3 id="mb_no"></h3>
+    </div>
+    <script>
+      let id_card = document.getElementById("card");
+      id_card.style.backgroundColor = "lightblue";
+      id_card.style.width = "200px";
+      id_card.style.borderRadius = "5%";
+      id_card.style.border = "2px solid black";
+
+      let e_i_c = document.getElementById("e_i_c");
+      e_i_c.innerHTML = "<small><center>Employee Id Card</center></ssmall>";
+
+      let profile_pic = document.getElementById("img1");
+
+      profile_pic.setAttribute("src", "../assets/images/vinay.jpg");
+      profile_pic.style.height = "16vh";
+      profile_pic.style.borderRadius = "50%";
+      profile_pic.style.margin = "13%";
+
+      let user_name = document.getElementById("name");
+      user_name.innerHTML = "<center><small>D.J.Vinay Raj</small></center>";
+
+      let id_no = document.getElementById("id_no");
+      id_no.innerHTML = "<h3><center>12345</h3>";
+
+      let mb_no = document.getElementById("mb_no");
+      mb_no.innerHTML = "<h5> <center>ph.no:7842755515</h5>";
+    </script>
+  </body>
+</html>
